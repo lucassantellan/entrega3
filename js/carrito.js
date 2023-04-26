@@ -29,3 +29,16 @@ function buscarProducto(id){
     return productos.find(item => item.id === id);
 }
 
+function totalProductosCarrito(){
+    const productos = cargarProductosCarrito();
+    
+    return productos.lenght;
+
+}
+
+function renderBotonCarrito (){
+    const salida = ` <a href="carrito.html" id="carrito" class="btn btn-dark position-relative"></a>`
+    document.getElementById("carrito").innerHTML = salida
+}
+
+
